@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GYInputBox"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A swift automatic completion component."
 
   # This description is used to generate tags and improve search results.
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  s.frameworks = "UIKit", "Foundation"
+  spec.frameworks = "UIKit", "Foundation"
 
 
   # spec.library   = "iconv"
