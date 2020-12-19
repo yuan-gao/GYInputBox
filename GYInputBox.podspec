@@ -80,8 +80,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  # spec.source       = { :git => "https://github.com/yuan-gao/GYInputBox.git", :tag => "#{spec.version}" }
-  spec.source       = { :path => 'GYInputBox.podspec' }
+  spec.source       = { :git => "https://github.com/yuan-gao/GYInputBox.git", :tag => "#{spec.version}" }
+  # spec.source       = { :path => 'GYInputBox.podspec' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
