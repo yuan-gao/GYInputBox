@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A87CDB5F2060D0ECF90C74D /* libPods-GYInputBoxDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEF9FD7AE4F6CC9029AD986 /* libPods-GYInputBoxDemo.a */; };
+		D80DBF3D258DD4E300DF2E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DBF3C258DD4E300DF2E4A /* AppDelegate.swift */; };
+		D80DBF3F258DD4E300DF2E4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DBF3E258DD4E300DF2E4A /* SceneDelegate.swift */; };
+		D80DBF41258DD4E300DF2E4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DBF40258DD4E300DF2E4A /* ViewController.swift */; };
+		D80DBF44258DD4E300DF2E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80DBF42258DD4E300DF2E4A /* Main.storyboard */; };
+		D80DBF46258DD4E600DF2E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80DBF45258DD4E600DF2E4A /* Assets.xcassets */; };
+		D80DBF49258DD4E600DF2E4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80DBF47258DD4E600DF2E4A /* LaunchScreen.storyboard */; };
+		D80DBF54258DD4E700DF2E4A /* GYInputBoxDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DBF53258DD4E700DF2E4A /* GYInputBoxDemoTests.swift */; };
+		D80DBF5F258DD4E700DF2E4A /* GYInputBoxDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DBF5E258DD4E700DF2E4A /* GYInputBoxDemoUITests.swift */; };
+		D80DBF71258DD73300DF2E4A /* GYInputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DBF70258DD73300DF2E4A /* GYInputBox.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D80DBF50258DD4E700DF2E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D80DBF31258DD4E300DF2E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80DBF38258DD4E300DF2E4A;
+			remoteInfo = GYInputBoxDemo;
+		};
+		D80DBF5B258DD4E700DF2E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D80DBF31258DD4E300DF2E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80DBF38258DD4E300DF2E4A;
+			remoteInfo = GYInputBoxDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86E6645651EEDAF1625B7E9E /* Pods-GYInputBoxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYInputBoxDemo.release.xcconfig"; path = "Target Support Files/Pods-GYInputBoxDemo/Pods-GYInputBoxDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B7844EB5549257E078720F2E /* Pods-GYInputBoxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYInputBoxDemo.debug.xcconfig"; path = "Target Support Files/Pods-GYInputBoxDemo/Pods-GYInputBoxDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BCEF9FD7AE4F6CC9029AD986 /* libPods-GYInputBoxDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GYInputBoxDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80DBF39258DD4E300DF2E4A /* GYInputBoxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYInputBoxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80DBF3C258DD4E300DF2E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D80DBF3E258DD4E300DF2E4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D80DBF40258DD4E300DF2E4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D80DBF43258DD4E300DF2E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D80DBF45258DD4E600DF2E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D80DBF48258DD4E600DF2E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D80DBF4A258DD4E600DF2E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80DBF4F258DD4E700DF2E4A /* GYInputBoxDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYInputBoxDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80DBF53258DD4E700DF2E4A /* GYInputBoxDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYInputBoxDemoTests.swift; sourceTree = "<group>"; };
+		D80DBF55258DD4E700DF2E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80DBF5A258DD4E700DF2E4A /* GYInputBoxDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYInputBoxDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80DBF5E258DD4E700DF2E4A /* GYInputBoxDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYInputBoxDemoUITests.swift; sourceTree = "<group>"; };
+		D80DBF60258DD4E700DF2E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80DBF70258DD73300DF2E4A /* GYInputBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYInputBox.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D80DBF36258DD4E300DF2E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A87CDB5F2060D0ECF90C74D /* libPods-GYInputBoxDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80DBF4C258DD4E700DF2E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80DBF57258DD4E700DF2E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F875F47E7184D8FABAB589 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7844EB5549257E078720F2E /* Pods-GYInputBoxDemo.debug.xcconfig */,
+				86E6645651EEDAF1625B7E9E /* Pods-GYInputBoxDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3045A1C9D34FE06E52C3EC1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF9FD7AE4F6CC9029AD986 /* libPods-GYInputBoxDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D80DBF30258DD4E300DF2E4A = {
+			isa = PBXGroup;
+			children = (
+				D80DBF6F258DD71700DF2E4A /* Classes */,
+				D80DBF3B258DD4E300DF2E4A /* GYInputBoxDemo */,
+				D80DBF52258DD4E700DF2E4A /* GYInputBoxDemoTests */,
+				D80DBF5D258DD4E700DF2E4A /* GYInputBoxDemoUITests */,
+				D80DBF3A258DD4E300DF2E4A /* Products */,
+				15F875F47E7184D8FABAB589 /* Pods */,
+				3045A1C9D34FE06E52C3EC1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D80DBF3A258DD4E300DF2E4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D80DBF39258DD4E300DF2E4A /* GYInputBoxDemo.app */,
+				D80DBF4F258DD4E700DF2E4A /* GYInputBoxDemoTests.xctest */,
+				D80DBF5A258DD4E700DF2E4A /* GYInputBoxDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D80DBF3B258DD4E300DF2E4A /* GYInputBoxDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D80DBF3C258DD4E300DF2E4A /* AppDelegate.swift */,
+				D80DBF3E258DD4E300DF2E4A /* SceneDelegate.swift */,
+				D80DBF40258DD4E300DF2E4A /* ViewController.swift */,
+				D80DBF42258DD4E300DF2E4A /* Main.storyboard */,
+				D80DBF45258DD4E600DF2E4A /* Assets.xcassets */,
+				D80DBF47258DD4E600DF2E4A /* LaunchScreen.storyboard */,
+				D80DBF4A258DD4E600DF2E4A /* Info.plist */,
+			);
+			path = GYInputBoxDemo;
+			sourceTree = "<group>";
+		};
+		D80DBF52258DD4E700DF2E4A /* GYInputBoxDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D80DBF53258DD4E700DF2E4A /* GYInputBoxDemoTests.swift */,
+				D80DBF55258DD4E700DF2E4A /* Info.plist */,
+			);
+			path = GYInputBoxDemoTests;
+			sourceTree = "<group>";
+		};
+		D80DBF5D258DD4E700DF2E4A /* GYInputBoxDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D80DBF5E258DD4E700DF2E4A /* GYInputBoxDemoUITests.swift */,
+				D80DBF60258DD4E700DF2E4A /* Info.plist */,
+			);
+			path = GYInputBoxDemoUITests;
+			sourceTree = "<group>";
+		};
+		D80DBF6F258DD71700DF2E4A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D80DBF70258DD73300DF2E4A /* GYInputBox.swift */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D80DBF38258DD4E300DF2E4A /* GYInputBoxDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80DBF63258DD4E700DF2E4A /* Build configuration list for PBXNativeTarget "GYInputBoxDemo" */;
+			buildPhases = (
+				829F01674277736B694610DD /* [CP] Check Pods Manifest.lock */,
+				D80DBF35258DD4E300DF2E4A /* Sources */,
+				D80DBF36258DD4E300DF2E4A /* Frameworks */,
+				D80DBF37258DD4E300DF2E4A /* Resources */,
+				92EFEEEFD12E5B3FA82FED1D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GYInputBoxDemo;
+			productName = GYInputBoxDemo;
+			productReference = D80DBF39258DD4E300DF2E4A /* GYInputBoxDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D80DBF4E258DD4E700DF2E4A /* GYInputBoxDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80DBF66258DD4E700DF2E4A /* Build configuration list for PBXNativeTarget "GYInputBoxDemoTests" */;
+			buildPhases = (
+				D80DBF4B258DD4E700DF2E4A /* Sources */,
+				D80DBF4C258DD4E700DF2E4A /* Frameworks */,
+				D80DBF4D258DD4E700DF2E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D80DBF51258DD4E700DF2E4A /* PBXTargetDependency */,
+			);
+			name = GYInputBoxDemoTests;
+			productName = GYInputBoxDemoTests;
+			productReference = D80DBF4F258DD4E700DF2E4A /* GYInputBoxDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D80DBF59258DD4E700DF2E4A /* GYInputBoxDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80DBF69258DD4E700DF2E4A /* Build configuration list for PBXNativeTarget "GYInputBoxDemoUITests" */;
+			buildPhases = (
+				D80DBF56258DD4E700DF2E4A /* Sources */,
+				D80DBF57258DD4E700DF2E4A /* Frameworks */,
+				D80DBF58258DD4E700DF2E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D80DBF5C258DD4E700DF2E4A /* PBXTargetDependency */,
+			);
+			name = GYInputBoxDemoUITests;
+			productName = GYInputBoxDemoUITests;
+			productReference = D80DBF5A258DD4E700DF2E4A /* GYInputBoxDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D80DBF31258DD4E300DF2E4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					D80DBF38258DD4E300DF2E4A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					D80DBF4E258DD4E700DF2E4A = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = D80DBF38258DD4E300DF2E4A;
+					};
+					D80DBF59258DD4E700DF2E4A = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = D80DBF38258DD4E300DF2E4A;
+					};
+				};
+			};
+			buildConfigurationList = D80DBF34258DD4E300DF2E4A /* Build configuration list for PBXProject "GYInputBoxDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D80DBF30258DD4E300DF2E4A;
+			productRefGroup = D80DBF3A258DD4E300DF2E4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D80DBF38258DD4E300DF2E4A /* GYInputBoxDemo */,
+				D80DBF4E258DD4E700DF2E4A /* GYInputBoxDemoTests */,
+				D80DBF59258DD4E700DF2E4A /* GYInputBoxDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D80DBF37258DD4E300DF2E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80DBF49258DD4E600DF2E4A /* LaunchScreen.storyboard in Resources */,
+				D80DBF46258DD4E600DF2E4A /* Assets.xcassets in Resources */,
+				D80DBF44258DD4E300DF2E4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80DBF4D258DD4E700DF2E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80DBF58258DD4E700DF2E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		829F01674277736B694610DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GYInputBoxDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92EFEEEFD12E5B3FA82FED1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GYInputBoxDemo/Pods-GYInputBoxDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GYInputBoxDemo/Pods-GYInputBoxDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GYInputBoxDemo/Pods-GYInputBoxDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D80DBF35258DD4E300DF2E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80DBF71258DD73300DF2E4A /* GYInputBox.swift in Sources */,
+				D80DBF41258DD4E300DF2E4A /* ViewController.swift in Sources */,
+				D80DBF3D258DD4E300DF2E4A /* AppDelegate.swift in Sources */,
+				D80DBF3F258DD4E300DF2E4A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80DBF4B258DD4E700DF2E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80DBF54258DD4E700DF2E4A /* GYInputBoxDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80DBF56258DD4E700DF2E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80DBF5F258DD4E700DF2E4A /* GYInputBoxDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D80DBF51258DD4E700DF2E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80DBF38258DD4E300DF2E4A /* GYInputBoxDemo */;
+			targetProxy = D80DBF50258DD4E700DF2E4A /* PBXContainerItemProxy */;
+		};
+		D80DBF5C258DD4E700DF2E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80DBF38258DD4E300DF2E4A /* GYInputBoxDemo */;
+			targetProxy = D80DBF5B258DD4E700DF2E4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D80DBF42258DD4E300DF2E4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80DBF43258DD4E300DF2E4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D80DBF47258DD4E600DF2E4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80DBF48258DD4E600DF2E4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D80DBF61258DD4E700DF2E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D80DBF62258DD4E700DF2E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D80DBF64258DD4E700DF2E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7844EB5549257E078720F2E /* Pods-GYInputBoxDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GYInputBoxDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ronglian.GYInputBoxDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D80DBF65258DD4E700DF2E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E6645651EEDAF1625B7E9E /* Pods-GYInputBoxDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GYInputBoxDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ronglian.GYInputBoxDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D80DBF67258DD4E700DF2E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GYInputBoxDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ronglian.GYInputBoxDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYInputBoxDemo.app/GYInputBoxDemo";
+			};
+			name = Debug;
+		};
+		D80DBF68258DD4E700DF2E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GYInputBoxDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ronglian.GYInputBoxDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYInputBoxDemo.app/GYInputBoxDemo";
+			};
+			name = Release;
+		};
+		D80DBF6A258DD4E700DF2E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GYInputBoxDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ronglian.GYInputBoxDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GYInputBoxDemo;
+			};
+			name = Debug;
+		};
+		D80DBF6B258DD4E700DF2E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GYInputBoxDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ronglian.GYInputBoxDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GYInputBoxDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D80DBF34258DD4E300DF2E4A /* Build configuration list for PBXProject "GYInputBoxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80DBF61258DD4E700DF2E4A /* Debug */,
+				D80DBF62258DD4E700DF2E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80DBF63258DD4E700DF2E4A /* Build configuration list for PBXNativeTarget "GYInputBoxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80DBF64258DD4E700DF2E4A /* Debug */,
+				D80DBF65258DD4E700DF2E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80DBF66258DD4E700DF2E4A /* Build configuration list for PBXNativeTarget "GYInputBoxDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80DBF67258DD4E700DF2E4A /* Debug */,
+				D80DBF68258DD4E700DF2E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80DBF69258DD4E700DF2E4A /* Build configuration list for PBXNativeTarget "GYInputBoxDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80DBF6A258DD4E700DF2E4A /* Debug */,
+				D80DBF6B258DD4E700DF2E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D80DBF31258DD4E300DF2E4A /* Project object */;
+}

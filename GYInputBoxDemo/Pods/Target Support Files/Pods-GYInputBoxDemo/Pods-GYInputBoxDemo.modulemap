@@ -1,0 +1,6 @@
+module Pods_GYInputBoxDemo {
+  umbrella header "Pods-GYInputBoxDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,7 @@
+
+target 'GYInputBoxDemo' do
+  
+    pod 'LookinServer', :configurations => ['Debug']
+    pod 'SnapKit'
+   
+end
