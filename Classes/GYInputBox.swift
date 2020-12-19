@@ -8,26 +8,26 @@
 import UIKit
 import SnapKit
 
-protocol GYSearchBarDelegate {
+public protocol GYSearchBarDelegate {
     
     /// 返回补全富文本内容
     /// - Parameter index: 下标
     func attributedTextForIndex(index:Int) -> NSAttributedString
 }
 
-class GYInputBox: UIView,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate {
+public class GYInputBox: UIView {
     
     /// 代理
-    var delegate:GYSearchBarDelegate?
+    public  var delegate:GYSearchBarDelegate?
     
     /// 输入框文本发生改变事件
-    var searchTextDidChange:((String) -> ())!
+    public var searchTextDidChange:((String) -> ())!
     
     /// 选中某个补全文本事件
-    var didSelectIndex:((Int) -> ())!
+    public var didSelectIndex:((Int) -> ())!
     
     /// 输入框文本内容
-    var text: String {
+    public var text: String {
         get {
             return onEditingText ?? ""
         }
@@ -37,7 +37,7 @@ class GYInputBox: UIView,UITableViewDelegate,UITableViewDataSource,UITextFieldDe
     }
     
     /// 自动补全的数据源
-    var dataSouce:NSArray! = [] {
+    public var dataSouce:NSArray! = [] {
         didSet{
             self.tableView.reloadData()
             resetConstraint()
@@ -50,32 +50,35 @@ class GYInputBox: UIView,UITableViewDelegate,UITableViewDataSource,UITextFieldDe
     fileprivate var tableView:UITableView!
     fileprivate var placeholder:String!
     fileprivate var onEditingText:String!//正在编辑的文本
-    convenience init(placeholder: String, frame: CGRect) {
+    private var delegateImpl: GYInputBoxDelegateImpl?
+    
+    public convenience init(placeholder: String, frame: CGRect) {
         self.init(frame: frame)
         self.placeholder = placeholder
+        delegateImpl = GYInputBoxDelegateImpl(target: self)
         setupViews()
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func startEditing () {
+    public func startEditing () {
         searBarField.becomeFirstResponder()
     }
     
-    func endEditing () {
+    public func endEditing () {
         searBarField.resignFirstResponder()
     }
     
     fileprivate func setupViews() {
         searBarField = UITextField()
         searBarField.layer.cornerRadius = 4;
-        searBarField.delegate = self
+        searBarField.delegate = delegateImpl
         searBarField.layer.borderColor = UIColor.lightGray.cgColor
         searBarField.layer.borderWidth = 1.0
         let leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 18, height: 0))
@@ -90,8 +93,8 @@ class GYInputBox: UIView,UITableViewDelegate,UITableViewDataSource,UITextFieldDe
         })
         
         tableView = UITableView.init(frame: CGRect.zero, style: .plain)
-        tableView.delegate = self
-        tableView.dataSource = self
+        tableView.delegate = delegateImpl
+        tableView.dataSource = delegateImpl
         tableView.separatorStyle = .none
         tableView.layer.cornerRadius = 4;
         tableView.layer.borderColor = UIColor.lightGray.cgColor
@@ -114,43 +117,56 @@ class GYInputBox: UIView,UITableViewDelegate,UITableViewDataSource,UITextFieldDe
             make.right.bottom.equalTo(-2);
         }
     }
+}
+
+//隐藏内部实现协议
+private class GYInputBoxDelegateImpl: NSObject,UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSouce.count
+    private weak var target: GYInputBox!
+
+        init(target: GYInputBox) {
+            self.target = target
+            super.init()
+        }
+    
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return target.dataSouce.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "id", for: indexPath)
-        cell.textLabel?.attributedText = delegate?.attributedTextForIndex(index: indexPath.row)
+        cell.textLabel?.attributedText = target.delegate?.attributedTextForIndex(index: indexPath.row)
         return cell
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40.0;
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if (self.didSelectIndex != nil) {
-            self.didSelectIndex(indexPath.row)
+        if (target.didSelectIndex != nil) {
+            target.didSelectIndex(indexPath.row)
         }
     }
     
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        if (self.searchTextDidChange != nil) {
-            onEditingText = ""
-            self.searchTextDidChange(onEditingText)
+    public func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        if (target.searchTextDidChange != nil) {
+            target.onEditingText = ""
+            target.searchTextDidChange(target.onEditingText)
         }
         return true
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentText = textField.text ?? ""
         let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-        if (self.searchTextDidChange != nil) {
-            onEditingText = newText
-            self.searchTextDidChange(onEditingText)
+        if (target.searchTextDidChange != nil) {
+            target.onEditingText = newText
+            target.searchTextDidChange(target.onEditingText)
         }
         return true
     }
 }
+

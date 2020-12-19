@@ -46,6 +46,7 @@ class ViewController: UIViewController,GYSearchBarDelegate {
             self.searchBar.text = cont
             self.searchBar.dataSouce = []
         }
+        
     }
     
     func attributedTextForIndex(index: Int) -> NSAttributedString {
